@@ -3,7 +3,8 @@ title: "Mastering Basic Linux Commands for DevOps Excellence (Part 1)🐧"
 datePublished: Tue Jul 18 2023 18:29:04 GMT+0000 (Coordinated Universal Time)
 cuid: clk8mp3ff000009lb7v86hjjy
 slug: mastering-basic-linux-commands-for-devops-excellence-part-1
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689704729834/5e0ccbd0-dc22-4e36-869b-1a9371090fb7.jpeg
+canonical: https://varunmargam.hashnode.dev/mastering-basic-linux-commands-for-devops-excellence-part-1
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689770842344/3fa427c6-3dcb-4dec-846c-2c69776c7c52.png
 tags: linux-for-beginners, devops-journey, 90daysofdevops, day2, trainwithshubham
 
 ---
@@ -248,7 +249,7 @@ This path can be specified while writing commands which require &lt;source&gt;,&
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689703492946/dbbdf7c3-8ecf-4618-bfd7-c14546071d28.png align="center")
     
-7. To Edit files and directories we have to use Vim editor. Stay tuned for an upcoming blog where we dive deep into this topic. 🚀💻
+7. To Edit files we have to use Vim editor. Stay tuned for an upcoming blog where we dive deep into this topic. 🚀💻
     
 
 💡Tip: It is not feasible to know all options for every command for that we have a manual for every command on how to use it provided by Linux which can be seen using the command:
