@@ -3,7 +3,7 @@ title: "Bash Scripting Basics: Your Gateway to Automation"
 datePublished: Thu Jul 20 2023 18:16:02 GMT+0000 (Coordinated Universal Time)
 cuid: clkbh41ok000009l56cti2utb
 slug: bash-scripting-basics-your-gateway-to-automation
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689867475606/7f28835a-1f2f-434c-9d43-397ccf67bbc1.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689942838335/cd8979a7-4488-4255-9f6c-fa656556ed8c.png
 tags: 90daysofdevops, day4, linux-for-devops, trainwithshubham, shellscripting-devops
 
 ---
