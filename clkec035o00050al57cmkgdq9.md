@@ -1,8 +1,8 @@
 ---
-title: "Mastering Basic Linux Commands for DevOps Excellence (Part 1)"
+title: "Mastering Advance Linux Commands for DevOps Excellence (Part 1)"
 datePublished: Sat Jul 22 2023 18:16:18 GMT+0000 (Coordinated Universal Time)
 cuid: clkec035o00050al57cmkgdq9
-slug: mastering-basic-linux-commands-for-devops-excellence-part-1-1
+slug: mastering-advance-linux-commands-for-devops-excellence-part-1
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690049656663/5439e6c8-4f2f-4d03-adcf-20fdae84a3ce.png
 tags: devops-journey, 90daysofdevops, day6, trainwithshubham, linux-advance-commands
 
