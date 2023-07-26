@@ -1,9 +1,9 @@
 ---
-title: "Git & GitHub: The Guide to Version Control and Collaboration"
+title: "Git & GitHub: A Comprehensive Series on Version Control and Collaborative Development (Part 1)"
 seoTitle: "Mastering Git & GitHub: A Guide for DevOps Engineers"
 datePublished: Tue Jul 25 2023 14:06:47 GMT+0000 (Coordinated Universal Time)
 cuid: clkidercy00050amj1i5se4e1
-slug: git-github-the-guide-to-version-control-and-collaboration
+slug: git-github-a-comprehensive-series-on-version-control-and-collaborative-development-part-1
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690284082518/7bcff7de-879d-402b-b691-0276718bbd8a.jpeg
 tags: github, git, devops-journey, 90daysofdevops, day9
 
