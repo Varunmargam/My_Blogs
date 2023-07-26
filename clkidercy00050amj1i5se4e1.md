@@ -4,7 +4,7 @@ seoTitle: "Mastering Version Control with Git & GitHub: A Guide for Developers"
 datePublished: Tue Jul 25 2023 14:06:47 GMT+0000 (Coordinated Universal Time)
 cuid: clkidercy00050amj1i5se4e1
 slug: git-github-a-comprehensive-series-on-version-control-and-collaborative-development-part-1
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690284082518/7bcff7de-879d-402b-b691-0276718bbd8a.jpeg
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690394015650/1df7c733-d431-4bd4-8573-d634d301ddbc.png
 tags: github, git, devops-journey, 90daysofdevops, day9
 
 ---
