@@ -1,6 +1,6 @@
 ---
 title: "Git & GitHub: A Comprehensive Series on Version Control and Collaborative Development (Part 1)"
-seoTitle: "Mastering Git & GitHub: A Guide for DevOps Engineers"
+seoTitle: "Mastering Version Control with Git & GitHub: A Guide for Developers"
 datePublished: Tue Jul 25 2023 14:06:47 GMT+0000 (Coordinated Universal Time)
 cuid: clkidercy00050amj1i5se4e1
 slug: git-github-a-comprehensive-series-on-version-control-and-collaborative-development-part-1
