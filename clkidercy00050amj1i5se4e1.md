@@ -219,7 +219,9 @@ These git commands are executed on your local computer. To execute git commands 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690274057639/52096fb5-fba3-473b-871f-ffa16160a5df.png align="center")
     
-13. `#git checkout <branch_name>`: This will make the HEAD pointer pointing to the main branch point to the branch `<branch_name>` i.e. we will switch to the branch `<branch_name>`.
+13. `#git branch -d <branch_name>`: Deletes the branch `<branch_name>`.
+    
+14. `#git checkout <branch_name>`: This will make the HEAD pointer pointing to the main branch point to the branch `<branch_name>` i.e. we will switch to the branch `<branch_name>`.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690274147797/aea6c103-6aad-45dd-95fa-200b3fe82704.png align="center")
     
