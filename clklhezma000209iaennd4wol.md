@@ -72,8 +72,6 @@ Git & GitHub is crucial for DevOps so, continuing this DevOps journey let's take
     
 7. `#git push -u <remote_repo_GitHub> <local_folder>/<local_branch_name>`: It publishes the local branch on the remote repository on GitHub. The `-u` flag is used to obtain a tracking connection between the local and the remote repository.
     
-    ## ✔
-    
     (📝Note: To execute this you need a remote repository added to your local repository. (Explained in the Part1 add link) You can create remote branches by uploading these local branches to the remote repository using `#git push`. But, you cannot directly create a remote branch from your local repository.)
     
     Now I have the branch on my remote GitHub repository:
