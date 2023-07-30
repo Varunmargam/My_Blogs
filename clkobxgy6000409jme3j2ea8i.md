@@ -1,8 +1,8 @@
 ---
-title: "Python: Empowering DevOps with Automation and Efficiency"
+title: "Python: Empowering DevOps with Automation and Efficiency (Part 1)"
 datePublished: Sat Jul 29 2023 18:11:58 GMT+0000 (Coordinated Universal Time)
 cuid: clkobxgy6000409jme3j2ea8i
-slug: python-empowering-devops-with-automation-and-efficiency
+slug: python-empowering-devops-with-automation-and-efficiency-part-1
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690654134953/1740676c-ad14-427c-876d-8bcdff7a8cfc.jpeg
 tags: python, devops-journey, 90daysofdevops, day13, trainwithshubham
 
@@ -12,7 +12,7 @@ tags: python, devops-journey, 90daysofdevops, day13, trainwithshubham
 
 # 📍Introduction
 
-📚Welcome to our Python for DevOps Blog Series!🐍
+📚Welcome to Part 1 of my Python for DevOps Blog Series!🐍
 
 Python is vital in DevOps for automation & integration. Python's flexibility and rich libraries make it robust across various fields, including DevOps. We will be learning Python from the basics to all the necessary things you will require for all your DevOps tasks. Let's unlock Python's potential in DevOps together!🌟
 
