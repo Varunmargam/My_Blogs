@@ -3,7 +3,7 @@ title: "Python: Empowering DevOps with Automation and Efficiency (Part 1)"
 datePublished: Sat Jul 29 2023 18:11:58 GMT+0000 (Coordinated Universal Time)
 cuid: clkobxgy6000409jme3j2ea8i
 slug: python-empowering-devops-with-automation-and-efficiency-part-1
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690654134953/1740676c-ad14-427c-876d-8bcdff7a8cfc.jpeg
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690739842144/d3c9c74e-b682-47c0-a835-b4809db981b1.png
 tags: python, devops-journey, 90daysofdevops, day13, trainwithshubham
 
 ---
