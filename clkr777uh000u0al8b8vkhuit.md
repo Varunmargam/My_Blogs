@@ -10,7 +10,7 @@ tags: python3, devops-journey, 90daysofdevops, day15, trainwithshubham
 
 ---
 
-# Introduction
+# 📍Introduction
 
 📚Welcome to Part 3 of the Python for DevOps Blog Series!🐍
 
@@ -18,9 +18,9 @@ In this blog, we will learn about Modules, Packages, Libraries, and File-Handlin
 
 ---
 
-# Modules & Libraries
+# 📍Modules & Libraries
 
-## Modules
+## ✔Modules
 
 Modules are a block consisting of Python code that has some functions, classes, and tasks written, and well-tested inside it. These modules come in very handy while writing a large codebase where you don't want to write every minute functionality from scratch. There are 2 types of modules in Python:
 
@@ -33,13 +33,11 @@ You can use the modules by using the `import` command, type `import <module_name
 
 It is not feasible to know all the functions provided by all the modules therefore, you can see the module's documentation from Google. You can also create your module inside a file with a `.py` extension.
 
-(Photo)
-
-# Package
+## ✔Package
 
 Packages are folders that contain a collection of related modules. It contains an `init.py` file inside that makes the folder a Python package. You can import the modules from a package using the command `from <package_name> import <module_name>`.
 
-# Libraries
+## ✔Libraries
 
 Libraries in Python contain a collection of Python packages and modules. Libraries are very helpful for developing large-scale projects. Python has a large number of libraries useful for various fields making it popular for developing. Fields like Machine Learning, Data Science, Data visualization, DevOps, etc. Python is widely used.
 
@@ -51,22 +49,22 @@ from <library> import * # To import all the modules inside the library.
 
 Popular Python Libraries are:
 
-1. NumPy: A library for numerical computing, linear algebra, and statistical operations providing support for arrays and matrices and numerous mathematical functions.
+1. **NumPy**: A library for numerical computing, linear algebra, and statistical operations providing support for arrays and matrices and numerous mathematical functions.
     
-2. Pandas: A library for data manipulation and analysis, used for data visualization, statistical analysis, missing data handling, and offers data structures like DataFrames that make it easy to work with structured data.
+2. **Pandas**: A library for data manipulation and analysis, used for data visualization, statistical analysis, missing data handling, and offers data structures like DataFrames that make it easy to work with structured data.
     
-3. Matplotlib: A powerful plotting library that enables the creation of various types of charts and visualizations, 3D plotting, and animations (animated visualizations).
+3. **Matplotlib**: A powerful plotting library that enables the creation of various types of charts and visualizations, 3D plotting, and animations (animated visualizations).
     
-4. TensorFlow and PyTorch: Libraries for machine learning and deep learning, offering tools to build and train neural networks.
+4. **TensorFlow and PyTorch**: Libraries for machine learning and deep learning, offering tools to build and train neural networks.
     
-5. Django and Flask: Web frameworks that simplify web development by providing tools for routing, templating, and handling requests.
+5. **Django and Flask**: Web frameworks that simplify web development by providing tools for routing, templating, and handling requests.
     
-6. os and shutil: Libraries for file and directory management, providing functionalities like file operations, path manipulation, and more.
+6. **os and shutil**: Libraries for file and directory management, providing functionalities like file operations, path manipulation, and more.
     
 
 ---
 
-# File Handling
+# 📍File Handling
 
 Python has built-in file-handling functions. Here are some of the file-handling functions:
 
@@ -125,7 +123,7 @@ Python has built-in file-handling functions. Here are some of the file-handling 
 
 ---
 
-# Reading a JSON file
+# 📍Reading a JSON file
 
 To read a JSON file in Python we have to use an in-built module by doing:
 
@@ -193,7 +191,7 @@ Before we dive into how to read a JSON file, let's understand 2 methods/function
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690827045438/8511290d-b529-4b04-93db-3ace8b55ba8f.png align="center")
     
 
-## Task:
+## ✔Task:
 
 Read the above JSON file and print the service names of every cloud service provider.
 
