@@ -122,53 +122,53 @@ Git & GitHub is crucial for DevOps so, continuing this DevOps journey let's take
 
 ## ✔Revert
 
-Let's understand the git reset command with an example:
+Let's understand the `git reset` command with an example:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690902900071/6da9e937-ecad-4659-a92e-9a8461bc483f.png align="center")
 
-I created an empty repository on my GitHub named Learning\_Git and added it to my existing local repository. Created a commands.txt file and pushed the changes to my remote repository on the master branch.
+I created an empty repository on my GitHub named `Learning_Git` and added it to my existing local repository. Created a commands.txt file and pushed the changes to my remote repository on the master branch.
 
-Then I created a new branch from my master in the local repo and made 3 commits as you can see in the above image but, the latest commit I made is a faulty commit and this commit is now the latest version of the file. Now, I want to return to the previous version of the file where there was no faulty feature2.txt file. For this, I will use the git revert &lt;commit\_id&gt; command. The &lt;commit\_id&gt; will be of the commit to which I want to revert i.e. return.
+Then I created a new branch from my master in the local repo and made 3 commits as you can see in the above image but, the latest commit I made is a faulty commit and this commit is now the latest version of the file. Now, I want to return to the previous version of the file where there were no faulty `feature2.txt` files. For this, I will use the `git revert <commit_id>` command. The `<commit_id>` will be of the commit to which I want to revert i.e. return.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690903580264/8dc9755c-66c6-464a-8f1f-068470098736.png align="center")
 
-When I execute the git revert command a default editor will open with a commit message that we have to confirm this revert action by saving the file:
+When I execute the `git revert` command a default editor will open with a commit message that we have to confirm this revert action by saving the file:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690903510456/c84ad19e-beca-45da-b52d-a6de553ad01a.png align="center")
 
-Now when you do git log --oneline:
+Now when you do `git log --oneline`:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690903844501/2ac69fe4-c3e0-4646-b10b-b983db3848f3.png align="center")
 
 You can see that the revert command created another commit saying the faulty commit was reverted preserving the history of the file. This is good as it provides transparency while working with a team on all the changes made to the file. Along with the new commit, it also went to the previous version where there was no faulty feature added.
 
-This git revert command will be very useful since you if there is a scenario where a file was modified with a faulty functionality but the rest of the content was good, you don't want to delete the whole file. Here, you can use this git revert command to go back to the version where there was no faulty functionality added.
+This `git revert` command will be very useful since you if there is a scenario where a file was modified with a faulty functionality but the rest of the content was good, you don't want to delete the whole file. Here, you can use this git revert command to go back to the version where there was no faulty functionality added.
 
 ## ✔Reset
 
-It is advisable to not use the git reset command or you should only use it in some rare emergencies as it removes the file's history. Let's take an example of such a scenario where you have to use the git reset command.
+It is advisable to not use the `git reset` command or you should only use it in some rare emergencies as it removes the file's history. Let's take an example of such a scenario where you have to use the git reset command.
 
-I created a keys.txt file where I stored some of my confidential credentials in it. then I created a feature2.txt file then added it, and committed these changes without realizing that the keys.txt file was also committed with it.
+I created a `keys.txt` file where I stored some of my confidential credentials in it. then I created a `feature2.txt` file then added it, and committed these changes without realizing that the `keys.txt` file was also committed with it.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690910158480/d9fbeb52-107e-4d44-9945-d029a8a0ef8f.png align="center")
 
-In this scenario, if I do git revert then the changes will be saved in the file history so, here I can use the git reset &lt;commit\_id&gt; command, and the &lt;commit\_id&gt; should be at the point where you want your current version to be. In my case, I wanted to go back to the revert commit so I will add the revert commit id to the reset command.
+In this scenario, if I do git revert then the changes will be saved in the file history so, here I can use the `git reset <commit_id>` command, and the `<commit_id>` should be at the point where you want your current version to be. In my case, I wanted to go back to the `revert` commit so I will add the revert commit id to the `reset` command.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690910442386/d602fa99-3b3d-4b43-b655-c3bc21a00c7d.png align="center")
 
-You can see the history of the commit after the revert commit has been erased and the commit changes are now back to the untracked stage.
+You can see the history of the commit after the `revert` commit has been erased and the commit changes are now back to the untracked stage.
 
 ---
 
 # 📍Git Ignore
 
-To avoid the above scenario where you want to keep your credentials in your Git repository but do not want Git to track that keys.txt file then you can put it in the `.gitignore` file.
+To avoid the above scenario where you want to keep your credentials in your Git repository but do not want Git to track that `keys.txt` file then you can put it in the `.gitignore` file.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690911254176/ee22ea66-d37b-4940-b8a3-3ddb08ceb8f9.png align="center")
 
-You can see in the above image the git is not tracking the keys.txt file because the .gitignore file contains the keys.txt file.
+You can see in the above image the git is not tracking the `keys.txt` file because the `.gitignore` file contains the `keys.txt` file.
 
-The .gitignore is a special file where all the files mentioned in it are not tracked by the git and cannot be committed. Make sure to commit the changes by adding a .gitignore file in your repository.
+The `.gitignore` is a special file where all the files mentioned in it are not tracked by the git and cannot be committed. Make sure to commit the changes by adding a `.gitignore` file in your repository.
 
 ---
 
@@ -207,6 +207,32 @@ So now, when I will merge the commits from the dev branch to the master branch I
 You can see the 2 commits of adding feature3 and feature4 was not added to the master branch but the changes were added:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690913268852/fd535493-6316-4f41-97f5-d7d30430ce14.png align="center")
+
+## ✔Merging branches in GitHub
+
+I added 2 commits creating a feature3.txt and feature4.txt file inside the dev branch in my local repository. I will push these local changes to the remote dev branch on GitHub:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690917632187/51eac9e1-cac2-41f3-b2ae-db84cb4f0116.png align="center")
+
+You can see the changes have been pushed to the GitHub repository:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690917713526/6fca45a7-fc0d-4d0f-8b29-40dfe8f06829.png align="center")
+
+To merge these changes made in the dev branch GitHub is telling me to create a Pull request. And we can compare and merge the changes to the master branch on GitHub which we have seen in my [Python: Empowering DevOps with Automation and Efficiency (Part 2](https://varunmargam.hashnode.dev/git-github-a-comprehensive-series-on-version-control-and-collaborative-development-part-2)) blog.
+
+---
+
+# 📍Rebase Branches
+
+Rebase is similar to merging but it linearly creates the history branch whereas the merge does not.
+
+### Q)In which scenario the rebase command is used?
+
+Let's continue the above example:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690918391997/0d7d190d-7823-4b8b-ac2f-1ffb909e07ea.png align="center")
+
+You can see that the origin master branch in my local repository is not in sync with the remote master branch as the changes we have merged from the dev branch were done on GitHub. Therefore, these remote changes needed to be pulled to the local repository.
 
 ---
 
