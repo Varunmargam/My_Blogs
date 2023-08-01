@@ -33,6 +33,9 @@ Git & GitHub is crucial for DevOps so, continuing this DevOps journey let's take
 
 * "**HEAD**" - The HEAD branch represents the currently active or checked-out branch
     
+
+📝Note: Every branch has its HEAD pointer pointing to the latest commit on that particular branch.
+
 * A **default** branch is present in every repository called `main` in the GitHub repo and `master` in the local Git repository where all the changes in the project are tracked via a commit after finalizing the changes by the owner of the project.
     
 * **Local & Remote branches** - Local branches are the branches created on our local repository. Remote branches are the branches created on the GitHub repository they are mostly for synchronizing with the local branches. We mostly work on our local branches and push or publish these branches on our GitHub.
@@ -113,34 +116,97 @@ Git & GitHub is crucial for DevOps so, continuing this DevOps journey let's take
 11. `#git branch -v`: Lists all the branches present in the local repo and also displays if it is ahead or behind the remote branch.
     
 
-## ✔Merging Branches
+---
 
-Integrates the changes from another branch into your current HEAD branch. For that, you must be at the branch where you want to receive the changes.
+# 📍Revert & Reset
 
-1. `#git merge <branch>`: Merges the changes in the `<branch>` branch with the current HEAD branch.
-    
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690458229730/3f598aa6-a078-43b1-94b0-1cb9295c8367.png align="center")
-    
-    You can see that `new_branch` does not contain a `test.txt` file in it. I want to integrate the changes in the `branch1` branch inside the `new_branch`. Therefore, I will switch to the `new_branch` and then execute the command `#git merge branch1`:
-    
-    But it is giving me this commit message window:
-    
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690458663213/f4c48d4e-bebe-4800-9dca-f78cf5f7adbd.png align="center")
-    
-    Because merging produces a merge commit (not always) therefore, it is showing me this commit message in the editor to edit this commit message. I can save this by doing `:wq`. Then it will be merged successfully.
-    
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690458919828/ff583557-4543-4f53-ad73-0723e4647fa3.png align="center")
-    
-    As you can see this will not delete the branch, it will just merge the changes.
-    
+## ✔Revert
 
-## ✔Rebasing branches
+Let's understand the git reset command with an example:
 
-Rebase does a similar thing as merging but the branch after merging the commits of that branch it will look like a straight line. Let's understand it better by doing the same thing we did using merge, with rebase.
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690902900071/6da9e937-ecad-4659-a92e-9a8461bc483f.png align="center")
 
-Here, we have a similar situation as before used where `branch1` contains a `test.txt` file that is not present in `new_branch`. I will merge the changes in `branch1` into `new_branch` using rebase. Unlike in merge here I will be on the branch from which the changes are merged and mention the branch receiving the changes inside the command:
+I created an empty repository on my GitHub named Learning\_Git and added it to my existing local repository. Created a commands.txt file and pushed the changes to my remote repository on the master branch.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690461516490/20e57a2a-961a-4333-9ed0-7fb2cc229c39.png align="center")
+Then I created a new branch from my master in the local repo and made 3 commits as you can see in the above image but, the latest commit I made is a faulty commit and this commit is now the latest version of the file. Now, I want to return to the previous version of the file where there was no faulty feature2.txt file. For this, I will use the git revert &lt;commit\_id&gt; command. The &lt;commit\_id&gt; will be of the commit to which I want to revert i.e. return.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690903580264/8dc9755c-66c6-464a-8f1f-068470098736.png align="center")
+
+When I execute the git revert command a default editor will open with a commit message that we have to confirm this revert action by saving the file:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690903510456/c84ad19e-beca-45da-b52d-a6de553ad01a.png align="center")
+
+Now when you do git log --oneline:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690903844501/2ac69fe4-c3e0-4646-b10b-b983db3848f3.png align="center")
+
+You can see that the revert command created another commit saying the faulty commit was reverted preserving the history of the file. This is good as it provides transparency while working with a team on all the changes made to the file. Along with the new commit, it also went to the previous version where there was no faulty feature added.
+
+This git revert command will be very useful since you if there is a scenario where a file was modified with a faulty functionality but the rest of the content was good, you don't want to delete the whole file. Here, you can use this git revert command to go back to the version where there was no faulty functionality added.
+
+## ✔Reset
+
+It is advisable to not use the git reset command or you should only use it in some rare emergencies as it removes the file's history. Let's take an example of such a scenario where you have to use the git reset command.
+
+I created a keys.txt file where I stored some of my confidential credentials in it. then I created a feature2.txt file then added it, and committed these changes without realizing that the keys.txt file was also committed with it.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690910158480/d9fbeb52-107e-4d44-9945-d029a8a0ef8f.png align="center")
+
+In this scenario, if I do git revert then the changes will be saved in the file history so, here I can use the git reset &lt;commit\_id&gt; command, and the &lt;commit\_id&gt; should be at the point where you want your current version to be. In my case, I wanted to go back to the revert commit so I will add the revert commit id to the reset command.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690910442386/d602fa99-3b3d-4b43-b655-c3bc21a00c7d.png align="center")
+
+You can see the history of the commit after the revert commit has been erased and the commit changes are now back to the untracked stage.
+
+---
+
+# 📍Git Ignore
+
+To avoid the above scenario where you want to keep your credentials in your Git repository but do not want Git to track that keys.txt file then you can put it in the `.gitignore` file.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690911254176/ee22ea66-d37b-4940-b8a3-3ddb08ceb8f9.png align="center")
+
+You can see in the above image the git is not tracking the keys.txt file because the .gitignore file contains the keys.txt file.
+
+The .gitignore is a special file where all the files mentioned in it are not tracked by the git and cannot be committed. Make sure to commit the changes by adding a .gitignore file in your repository.
+
+---
+
+# 📍Merge Branches
+
+We know that the changes committed on one branch do not affect the main branch. So when the changes are finalized and I want to add these changes to the main branch I will use the git merge command to add the commits after the latest commit in the main branch. Let's understand this by continuing the above scenario.
+
+All the commits we made before were in the dev branch so when I switch to the master branch and do git status:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690911896307/c9f631a2-200d-4f00-8dd8-e304809eeb6c.png align="center")
+
+Now instead of creating another .gitignore file and doing the same in the master branch, I will bring the changes made in the dev branch inside the master branch. For this, I will use git merge:
+
+To merge branches first I have to be on the branch where the changes will be added, I want the changes from the dev branch to be in the master branch therefore, I will be on the master branch and execute the merge command:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690912196083/02584274-cb37-44ee-8a57-71e0db7f0b10.png align="center")
+
+You can see all the changes in the dev branch were added to the master branch. Now, when you do git log:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690912288032/7d24c117-7cae-4b4e-a60e-d93eb22ff7af.png align="center")
+
+HEAD is pointing to both the dev and master branch.
+
+## ✔Squash & Merge
+
+I will now switch to the dev branch and make 2 more commits. Now you can see that the master branch already has a long list of commits if this continues then the history will be very long:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690912946032/05682e57-5756-4f23-b737-e8453ac72228.png align="center")
+
+So now, when I will merge the commits from the dev branch to the master branch I will squash and merge it. Squash will make multiple commits into a single commit and will be merged. Using the command:
+
+`git merge dev --squash`
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690913078120/a56f0dc4-7f6d-4bf1-92d2-22d041784b80.png align="center")
+
+You can see the 2 commits of adding feature3 and feature4 was not added to the master branch but the changes were added:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690913268852/fd535493-6316-4f41-97f5-d7d30430ce14.png align="center")
 
 ---
 
@@ -171,42 +237,6 @@ A merge conflict can occur when the same changes were made in the same file by t
 You have to manually resolve this merge conflict by making some changes.
 
 *(I'll soon update the hands-on part)*
-
----
-
-# 📍Revert & Reset
-
-## ✔Reset
-
-If you want to go back to the previous version of your file and undo your commit you can use the `#git reset <commit_id>` command.
-
-Let's take an example: I made 3 commits in my master branch:
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690478114817/0db07b31-bd41-4094-a281-ab07cdca5ae3.png align="center")
-
-But now I want to undo the commits and go back to the file when the m1 file was added for that I will copy the commit\_id of the commit where the m1 file was added and execute the command:
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690478325740/68895f6c-5520-4ee0-84fe-9f84fe06af5e.png align="center")
-
-Now my file is at the stage when the m1 file was added and the other 2 commits were added to the unstaged area in the untracked files. I can remove these changes and not track them by doing `#git add .` then `#git squash` and `#git squash clear`, or I can commit those changes again.
-
-## ✔Revert
-
-If we made a commit to the repository and then I realize that the changes made were not desired changes but the changes are committed so to take back this commit we can use the revert command.
-
-📝Note: We can remove not only the latest but any commit we want to, using the revert command.
-
-`#git revert <commit_id of the commit you want to remove>`
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690479463672/abd3395f-c0cb-424b-b786-c1cdf1d45dff.png align="center")
-
-Here, I reverted the commit where the m1 file was added. This will not delete the commit instead create a new commit saying the reverted commit was removed:
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690479572624/7bc3135b-20e7-4fa8-9a64-e618f4d91764.png align="center")
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690479661191/869b6745-668d-4b6c-8654-2bc519c238ef.png align="center")
-
-Now you can see the master branch only contains files m2 and m3.
 
 ---
 
