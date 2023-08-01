@@ -42,37 +42,37 @@ Linux distributions are classified based on how they are packaged.
 
 The commands are for Ubuntu Linux but most of the basic commands may work in other distros:
 
-* `#whoami`: Displays your current user name.
+* `whoami`: Displays your current user name.
     
-* `#pwd`: Displays your current working directory.
+* `pwd`: Displays your current working directory.
     
-* `#ls <path>`: Lists all the files and directories from the given &lt;path&gt;.
+* `ls <path>`: Lists all the files and directories from the given &lt;path&gt;.
     
-    `#ls -l`: Lists the files along with some metadata.
+    `ls -l`: Lists the files along with some metadata.
     
-    `#ls -a`: Lists all the files along with the hidden files.
+    `ls -a`: Lists all the files along with the hidden files.
     
-* `#clear`: Clears the working screen.
+* `clear`: Clears the working screen.
     
-* `#cd <directory_name or path>`: Changes to the directory of the path provided.
+* `cd <directory_name or path>`: Changes to the directory of the path provided.
     
-* `#date`: Displays the date of the system.
+* `date`: Displays the date of the system.
     
-* `#uptime`: Tells how much time the system is running.
+* `uptime`: Tells how much time the system is running.
     
-* `#history`: Lists all the previously executed commands.
+* `history`: Lists all the previously executed commands.
     
 * `~`: Denotes /home/user.
     
-* `#echo "text"`: Prints the text on your screen.
+* `echo "text"`: Prints the text on your screen.
     
 * `$0`: Variable that stores the name of the shell system that is running. Execute the `echo $0` command.
     
-* `#man <command>`: Provides a manual for the &lt;command&gt;. Press the q key to exit from the manual.
+* `man <command>`: Provides a manual for the &lt;command&gt;. Press the q key to exit from the manual.
     
-* `#sudo`: Gives the normal user to execute administrative commands by giving them root user privileges temporarily.
+* `sudo`: Gives the normal user to execute administrative commands by giving them root user privileges temporarily.
     
-* `#ps -ef`: Displays every process in the system along with their PID-process\_id and PPID-parent process\_id and more.
+* `ps -ef`: Displays every process in the system along with their PID-process\_id and PPID-parent process\_id and more.
     
 
 ---
@@ -81,39 +81,39 @@ The commands are for Ubuntu Linux but most of the basic commands may work in oth
 
 ## ✔Directories
 
-* `#mkdir dir`: Creates a directory with the name `<dir>`.
+* `mkdir dir`: Creates a directory with the name `<dir>`.
     
-* `#mkdir dir{1..n}`: Creates n directories.
+* `mkdir dir{1..n}`: Creates n directories.
     
-* `#mkdir -p dir1/dir2/..`: Creates a directory inside a directory.
+* `mkdir -p dir1/dir2/..`: Creates a directory inside a directory.
     
-* `#cd`: Changes to the particular directory or the path if provided.
+* `cd`: Changes to the particular directory or the path if provided.
     
 
 ## ✔Files
 
-* `#touch <file>`: Creates a file and the type of the file is decided by the extension provided.
+* `touch <file>`: Creates a file and the type of the file is decided by the extension provided.
     
-* `#touch file{1..n}`: Creates n files.
+* `touch file{1..n}`: Creates n files.
     
-* `#touch file1 file2 file3..`: Creates multiple files.
+* `touch file1 file2 file3..`: Creates multiple files.
     
-* `#cat file`: Displays the content of the file.
+* `cat file`: Displays the content of the file.
     
 
 ## ✔Operations on files and directories
 
-* `#cp <source> <destination>`: Copy files from the `source` path to the `destination`.
+* `cp <source> <destination>`: Copy files from the `source` path to the `destination`.
     
-    `#cp -r <source> <destination>`: Copy directories from its `source` to the `destination`.
+    `cp -r <source> <destination>`: Copy directories from its `source` to the `destination`.
     
-* `#rm <file or path>`: Removes/Deletes the file.
+* `rm <file or path>`: Removes/Deletes the file.
     
-    `#rm -r <dir or path>`: Removes/Deletes the directory.
+    `rm -r <dir or path>`: Removes/Deletes the directory.
     
-* `#mv <source> <destination>`: Moves the file or the directory from its `source` to the `destination`.
+* `mv <source> <destination>`: Moves the file or the directory from its `source` to the `destination`.
     
-* `#mv <old_name> <new_name>`: Renames the file or a directory.
+* `mv <old_name> <new_name>`: Renames the file or a directory.
     
 
 ---
@@ -169,36 +169,36 @@ It has 3 modes:
 
 # 📍User Management
 
-* `#useradd <new_user>`: Adds a new user with the name `<new_user>` to the system.
+* `useradd <new_user>`: Adds a new user with the name `<new_user>` to the system.
     
-* `#passwd <user>`: Sets password to the `<user>` account for secure login.
+* `passwd <user>`: Sets password to the `<user>` account for secure login.
     
-* `#su user`: Switch the user from the current user to the username `user` provided. Before switching to that user it asks the password we set for the user.
+* `su user`: Switch the user from the current user to the username `user` provided. Before switching to that user it asks the password we set for the user.
     
-* `#exit`: Exit from the user's account.
+* `exit`: Exit from the user's account.
     
-* `#userdel user`: Deletes the user.
+* `userdel user`: Deletes the user.
     
-* `#usermod -aG group user`: Adds the user to the group.
+* `usermod -aG group user`: Adds the user to the group.
     
-* `#/etc/passwd`: Contains all the users currently in the system along with the metadata like UID.
+* `/etc/passwd`: Contains all the users currently in the system along with the metadata like UID.
     
 
 ---
 
 # 📍Group Management
 
-* `#groupadd <group_name>`: Adds a group in the system.
+* `groupadd <group_name>`: Adds a group in the system.
     
-* `#groupdel <group_name>`: Deletes the group in the system.
+* `groupdel <group_name>`: Deletes the group in the system.
     
-* `#gpasswd -a user group`: Adds a user to the group.
+* `gpasswd -a user group`: Adds a user to the group.
     
-* `#gpasswd -M user1,user2,user3.. group`: Adds the members (multiple users) to the `group`. (No spaces after the '`,`').
+* `gpasswd -M user1,user2,user3.. group`: Adds the members (multiple users) to the `group`. (No spaces after the '`,`').
     
-* `#gpasswd -d user group`: Removes the user from the group.
+* `gpasswd -d user group`: Removes the user from the group.
     
-* `#groupmod -n <old_name> <new_name>`: Renames the group.
+* `groupmod -n <old_name> <new_name>`: Renames the group.
     
 * `/etc/group`: Contains all the groups currently in the system along with the metadata like GID, users added to it, etc.
     
@@ -207,7 +207,7 @@ It has 3 modes:
 
 # 📍File permissions
 
-`#chmod <permissions> file`: Syntax of the `#chmod` command used to change file permissions.
+`chmod <permissions> file`: Syntax of the `chmod` command used to change file permissions.
 
 Permissions are Read - r, Write - w, Execute - x.
 
@@ -222,9 +222,9 @@ Permissions are Read - r, Write - w, Execute - x.
 
 Users/Owner - u, Groups - g, Other users - o.
 
-* u+: To give permissions to the user it can be r, w, x, or rx any of the combinations you want to give.
+* `u+`: To give permissions to the user it can be r, w, x, or rx any of the combinations you want to give.
     
-* u-: To remove permissions from the user.
+* `u-`: To remove permissions from the user.
     
 * Similar for the Group (g) and other users(o).
     
@@ -248,13 +248,13 @@ Users/Owner - u, Groups - g, Other users - o.
 
 ## ✔Changing Ownership of the File
 
-* `#chown` command is used to change the owner of the file. Only the root user can change a file's owner.
+* `chown` command is used to change the owner of the file. Only the root user can change a file's owner.
     
-* `#chown -R new_user <file/directory>`: Changes the ownership of the file to the `new_user`. `-R` changes the ownership of the directory as well as all the files and directories inside it.
+* `chown -R new_user <file/directory>`: Changes the ownership of the file to the `new_user`. `-R` changes the ownership of the directory as well as all the files and directories inside it.
     
-* `#chgrp` is used to change group ownership. Only the root or the owner can change the file's group
+* `chgrp` is used to change group ownership. Only the root or the owner can change the file's group
     
-* `#chgrp -R new_group <file/directory>`: Changes the ownership of the file to the `new_group`.
+* `chgrp -R new_group <file/directory>`: Changes the ownership of the file to the `new_group`.
     
 
 ---
@@ -282,34 +282,34 @@ Users/Owner - u, Groups - g, Other users - o.
 
 Downloading or removing packages can only be executed by the root user.
 
-* `#apt install <package>`: To install any package in the system.
+* `apt install <package>`: To install any package in the system.
     
-    `#apt-get install`
+    `apt-get install`
     
-* `#apt remove <package>`: To remove the installed package.
+* `apt remove <package>`: To remove the installed package.
     
-* `#apt update`: Updates all the indexes of the installed packages in the system repository with the current versions.
+* `apt update`: Updates all the indexes of the installed packages in the system repository with the current versions.
     
-* `#apt upgrade`: Used to update the packages in the system. It installs the latest versions of the packages that were retrieved using `#apt update`.
+* `apt upgrade`: Used to update the packages in the system. It installs the latest versions of the packages that were retrieved using `#apt update`.
     
 
 ---
 
 # 📍Services
 
-#systemctl commands are used to control the services in the system.
+The `systemctl` commands are used to control the services in the system.
 
-* `#systemctl start service`: Starts the service.
+* `systemctl start service`: Starts the service.
     
-* `#systemctl enable service`: Enables the service i.e. when the system is booted the service will also get started.
+* `systemctl enable service`: Enables the service i.e. when the system is booted the service will also get started.
     
-* `#systemctl disable service`: Disables the service if it was enabled.
+* `systemctl disable service`: Disables the service if it was enabled.
     
-* `#systemctl status service`: Checks and displays the status of the service active or inactive.
+* `systemctl status service`: Checks and displays the status of the service active or inactive.
     
-* `#systemctl stop service`: Gracefully stops the services along with their child processes.
+* `systemctl stop service`: Gracefully stops the services along with their child processes.
     
-* `#systemctl kill service`: Kills the service forcefully not stopping the child processes.
+* `systemctl kill service`: Kills the service forcefully not stopping the child processes.
     
 
 ---
