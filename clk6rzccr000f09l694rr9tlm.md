@@ -6,7 +6,7 @@ cuid: clk6rzccr000f09l694rr9tlm
 slug: from-idea-to-deployment-an-introduction-to-devops
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689568590954/d4090db6-22b1-4952-b47d-4a202a893012.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1689592847236/32acf9be-1151-4a5c-865c-f75ce2af1780.jpeg
-tags: 90daysofdevops, trainwithshubham, day01
+tags: devops, devops-journey, 90daysofdevops, trainwithshubham, day01
 
 ---
 
@@ -205,6 +205,8 @@ DevOps is a collaborative approach that unites developers and operations profess
     
 
 By embracing automation, scaling, and infrastructure as part of DevOps practices, organizations can streamline processes, improve efficiency, and enhance the scalability and reliability of their software systems.
+
+Make sure to check out this amazing blog on **DevOps Pipeline** by **Mariusz Michalowski**: [Building the DevOps Pipeline - Key Concepts & Stages](https://spacelift.io/blog/devops-pipeline). This will help you understand DevOps practices & pipeline concepts in depth.
 
 ---
 
