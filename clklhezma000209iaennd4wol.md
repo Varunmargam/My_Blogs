@@ -208,6 +208,10 @@ You can see the 2 commits of adding feature3 and feature4 was not added to the m
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690913268852/fd535493-6316-4f41-97f5-d7d30430ce14.png align="center")
 
+When I do git status these changes are not yet committed therefore, I need to commit these changes:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690942356438/4ac2d191-6de1-487e-a945-db89114ac46b.png align="center")
+
 ## ✔Merging branches in GitHub
 
 I added 2 commits creating a feature3.txt and feature4.txt file inside the dev branch in my local repository. I will push these local changes to the remote dev branch on GitHub:
@@ -219,6 +223,10 @@ You can see the changes have been pushed to the GitHub repository:
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690917713526/6fca45a7-fc0d-4d0f-8b29-40dfe8f06829.png align="center")
 
 To merge these changes made in the dev branch GitHub is telling me to create a Pull request. And we can compare and merge the changes to the master branch on GitHub which we have seen in my [Python: Empowering DevOps with Automation and Efficiency (Part 2](https://varunmargam.hashnode.dev/git-github-a-comprehensive-series-on-version-control-and-collaborative-development-part-2)) blog.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690942480066/9bcafd70-ef66-40b6-9466-6120cc663eed.png align="center")
+
+You can see there is a merge commit in my GitHub repository.
 
 ---
 
@@ -232,7 +240,13 @@ Let's continue the above example:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690918391997/0d7d190d-7823-4b8b-ac2f-1ffb909e07ea.png align="center")
 
-You can see that the origin master branch in my local repository is not in sync with the remote master branch as the changes we have merged from the dev branch were done on GitHub. Therefore, these remote changes needed to be pulled to the local repository.
+You can see that the origin master branch in my local repository is not in sync with the remote master branch as the changes we have merged from the dev branch were done on GitHub. The merge commit on the GitHub repository and the squash commit in the local repository are not known to either of them. This is the case where you need the `git rebase` command.
+
+When you have made a certain commit but do not have the commits before that which is in another branch in this case the `git rebase` command can be used as it will merge the commit history in one line.
+
+Therefore, first, the remote changes needed to be pulled to the local repository. And then use the command `git merge <remote_repo> <branch> --rebase`:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690943166090/452abee6-2065-4ead-abfb-18774443ef07.png align="center")
 
 ---
 
@@ -244,6 +258,8 @@ Merging a command means that there will be a new commit created i.e. a merge com
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690480502163/59d2b1db-cf25-40d7-ab29-311363765e7f.png align="center")
 
+**It will merge the latest commit from the dev branch to the master branch with a new commit.**
+
 Here, the commits made in the feature branch will merge into the main branch as a new merge commit - in this case, C6. But the commits in `#git log` will be shown as C1-&gt;C2-&gt;C3-&gt;C4-&gt;C5-&gt;C6. This is how the commits will be merged when `#git merge` is used.
 
 ## ✔Rebase
@@ -251,6 +267,8 @@ Here, the commits made in the feature branch will merge into the main branch as 
 Rebasing is similar to merging but it will be more in a straight line i.e. it will move the entire feature branch at the tip of the main branch.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690481161815/ecfd2c7d-8268-456a-a2fb-f19fc85f87e2.png align="center")
+
+**Here, unlike merge it will merge all the commits made in the dev branch to the master branch.**
 
 C3 and C4 were the commands in the feature branch which is now rebased at the tip of the main branch. The flow of the commit in the git log will still be C1-&gt;C2-&gt;C3-&gt;C4-&gt;C5-&gt;C6. But the history of the commits that were made in the `feature` branch will be gone whereas the `merge` command preserves the history.
 
@@ -272,17 +290,17 @@ Whenever you integrate commits you do it on a branch level using commands like m
 
 ### Q) When to use cherrypick?
 
-Ans - A situation where you accidentally commit the changes to the branch you are not supposed to, in this scenario you can use cherry-pick command. Let's see an example:
+Ans - I made 2 commits where I added a feature5.txt file and a feature6.txt file in the dev branch:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690463052086/0c6763fe-1eb2-4ea6-8cb5-79133b08268a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690943887097/a0637216-dd0b-4206-b1ac-5cc76912d676.png align="center")
 
-Here, branch1 has committed the changes to the master branch instead of new\_branch which was not supposed to happen. Therefore I will use cherry-pick for that, I will go to the branch where the commit was supposed to happen and then execute the command:
+Now, I want only the 6th feature commit from the dev branch to my master branch. If I use git `rebase` or `merge` but the commits will be added which I do not want. In this case, I will use the command:
 
-`#git cherry-pick <commit_id>`
+`#git cherry-pick <commit_id>`: The `<commit_id>` will be the commit which I want to be merged in the master branch.
 
----
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690944125801/48a85648-9798-4281-a3ee-42275bb68d13.png align="center")
 
-*(I apologize for the explanations not being up to the mark. I know this blog lacks some practical hands-on scenarios which would have helped you to understand it better...I'll keep learning and gain more knowledge and soon update this blog with some more hands-on)*
+You can see using the cherry-pick command I merged only the feature6 commit from the dev branch to my master branch.
 
 ---
 
