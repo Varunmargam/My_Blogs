@@ -274,16 +274,6 @@ C3 and C4 were the commands in the feature branch which is now rebased at the ti
 
 ---
 
-# 📍Merge Conflict
-
-A merge conflict can occur when the same changes were made in the same file by two separate branches so while merging it will throw a merge conflict since it does not know which one to pick.
-
-You have to manually resolve this merge conflict by making some changes.
-
-*(I'll soon update the hands-on part)*
-
----
-
 # 📍Cherrypick
 
 Whenever you integrate commits you do it on a branch level using commands like merge or rebase to integrate changes from one branch into your current branch. But in some situations, you might only want to commit some changes rather than all the changes from a branch.
@@ -296,11 +286,69 @@ Ans - I made 2 commits where I added a feature5.txt file and a feature6.txt file
 
 Now, I want only the 6th feature commit from the dev branch to my master branch. If I use git `rebase` or `merge` but the commits will be added which I do not want. In this case, I will use the command:
 
-`#git cherry-pick <commit_id>`: The `<commit_id>` will be the commit which I want to be merged in the master branch.
+`#git cherry-pick <commit_id>`: The `<commit_id>` will be the commit that I want to be merged in the master branch.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690944125801/48a85648-9798-4281-a3ee-42275bb68d13.png align="center")
 
 You can see using the cherry-pick command I merged only the feature6 commit from the dev branch to my master branch.
+
+---
+
+# 📍Merge Conflict
+
+A merge conflict can occur when the same changes were made in the same file by two separate branches so while merging it will throw a merge conflict since it does not know which one to pick.
+
+You have to manually resolve this merge conflict by making some changes.
+
+Let's understand this by creating a conflict first.
+
+I am in my dev branch which is synced with the remote dev branch
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690947829223/dff5df45-a689-4c4f-a923-0e1eecaa4e7a.png align="center")
+
+Now, I modified the feature6.txt file and committed these changes to my local repository but for some reason, I did not push these changes to the remote repository.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690949401307/976f9f29-9b77-4c36-9218-c1b959a90bf3.png align="center")
+
+Now, an individual edited the same file on GitHub and committed those changes on GitHub:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690949671602/e48dd5ff-f3b9-47ad-8179-b58e9173bc5f.png align="center")
+
+Now, when I try to execute the `git pull` command in my local repository Git will get confused about whose changes it should save and will throw an error creating a Merge Conflict:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690949900213/b6aee072-ee28-4d27-aabe-e98ba6a6a26a.png align="center")
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690950082476/22683f80-00bc-4df2-9190-1ca681f3f636.png align="center")
+
+When I do git status it is saying both are modified i.e. from your local and remote both have modified the same file. Open the file in the Vim editor you will see these changes:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690950243771/f31759e5-fcd4-4c62-9c2f-6ede95cba238.png align="center")
+
+It is saying that the HEAD is the feature added in the local by you and the other section is by the other individual on GitHub. To resolve this conflict we need to choose manually which changes I need to keep. Let's say I want to keep my changes then I will delete all the other content except my changes and save & quit the file.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690950490345/23ed9e0a-9214-449f-b9c7-db29a4633e83.png align="center")
+
+I have resolved the commit when I do git status I have two options either `abort` the `merge` or go ahead with the merge:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690950623879/de44b125-0cd7-4bb2-8588-6f213a145b27.png align="center")
+
+Since I have resolved the conflict I will go ahead with the merge with git add:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690950850666/98dc681f-2a4d-42fe-ad80-4e941e73ee81.png align="center")
+
+`git status` now gives the prompt `All conflicts fixed but you are still merging` confirming if you are merging use git commit:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690951102204/57ad8b29-bcc9-4a48-a940-ff7d4cfc8399.png align="center")
+
+And I can pull the changes from the remote dev branch without any conflict.
+
+## ✔Merge Conflict when trying to push changes
+
+This can also occur when you try to push the changes to the remote repository for this you will have to follow the same process by `git pull` on your local -&gt; manually resolving the changes by `vim <file>` -&gt; `commit` it on your local -&gt; `git push` you will get no error or conflict.
+
+## ✔Best Practice to Avoid Merge Conflicts
+
+Always make sure to pull the changes from the remote repository to your local repository before making or committing any changes in the local repository.
 
 ---
 
