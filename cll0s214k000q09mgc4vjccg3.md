@@ -109,7 +109,7 @@ There are some more, we will explore them as we move towards some more advanced 
 
 ---
 
-# 📍Syntax
+# 📍Dockerfile Structure
 
 There is a format for writing a Dockerfile. A basic format of the Dockerfile can be seen by creating a Dockerfile for a simple Python code/program.
 
