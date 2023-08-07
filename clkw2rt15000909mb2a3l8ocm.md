@@ -190,6 +190,10 @@ Start your first Docker Container using the command `docker run`:
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1691117707734/611e55aa-eee2-484e-a8e4-1b9ae5be342e.png align="center")
     
+6. `docker ps`: Lists all the running containers
+    
+7. `docker ps -a`: Lists all the containers running and stopped.
+    
 
 ---
 
