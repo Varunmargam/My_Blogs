@@ -12,7 +12,7 @@ tags: automation, jenkins, devops-journey, 90daysofdevops, day22
 
 # 📍Introduction
 
-Welcome to my Jenkins series! Here, we'll dive into a tool that DevOps Engineers love for automating tasks. In this beginner-friendly blog, we'll discover what Jenkins is, learn about CI/CD, set it up, explore the Jenkins Web Interface, and create our very first Jenkins job.
+Welcome to my Jenkins blog series! Here, we'll dive into a tool that DevOps Engineers love for automating tasks. In this beginner-friendly blog, we'll discover what Jenkins is, learn about CI/CD, set it up, explore the Jenkins Web Interface, and create our very first Jenkins job.
 
 ---
 
