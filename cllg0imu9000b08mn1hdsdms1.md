@@ -79,11 +79,12 @@ Jenkins is a Java-based application that relies on the Java Virtual Machine (JVM
 
 Documentation to install Jenkins: [https://www.jenkins.io/doc/book/installing/](https://www.jenkins.io/doc/book/installing/)
 
+`Step 1`:
+
 ```bash
 sudo apt-get update
 sudo apt install openjdk-17-jre
 java --version # Verify java installation
-sudo apt-get install jenkins
 ```
 
 If the output for the `java --version` command is the following then it means the JDK had been successfully installed:
@@ -92,6 +93,18 @@ If the output for the `java --version` command is the following then it means th
 openjdk version "17.0.7" 2023-04-18
 OpenJDK Runtime Environment (build 17.0.7+7-Debian-1deb11u1)
 OpenJDK 64-Bit Server VM (build 17.0.7+7-Debian-1deb11u1, mixed mode, sharing)
+```
+
+`Step 2`:
+
+```bash
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
 ```
 
 ```bash
@@ -107,9 +120,9 @@ Since Jenkins is a service a user named "jenkins" is created in the system.
 
 The default port for the Jenkins web interface is **8080**. This means that when you access Jenkins through a web browser, you would typically use a URL like:
 
-http://localhost:8080
+`http://localhost:8080`
 
-http://aws\_ec2\_ip\_address:8080 ( If you are using an EC2 instance like I am)
+`http://aws_ec2_ip_address:8080` ( If you are using an EC2 instance like I am)
 
 Type this URL in your browser you will get this:
 
