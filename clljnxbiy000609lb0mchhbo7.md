@@ -104,7 +104,7 @@ The **Jenkinsfile** is scripted in "**Groovy**" syntax which helps us to define 
 
 # 📍**Jenkinsfile Syntax**
 
-## ✔Directive
+## ✔Directives
 
 In Jenkins pipelines and scripting, a directive is a keyword or statement that instructs the pipeline engine (or Jenkins) on how to execute pipeline stages, steps, and actions. Directives shape the pipeline's structure and behavior, guiding Jenkins on tasks like stage execution locations, error handling, user notifications, and more.
 
@@ -229,7 +229,7 @@ pipeline {
 
 Looking at both structures a question may arise:🤔
 
-### ✔Scripted and Declarative both offers predefined structure then how are they different❓
+### ✔Q) IfScripted and Declarative both offers predefined structure then how are they different❓
 
 **Ans:**
 
