@@ -46,7 +46,7 @@ Hence, a Dockerfile is a plain text configuration file used to define the steps 
 
 Keywords are the commands that tell the Docker Engine what to execute. Here are some commonly used Keywords while writing a Dockerfile:
 
-1. FROM: This keyword is used at the very beginning to pull the base image along with the OS from the DockerHub.
+1. `FROM`: This keyword is used at the very beginning to pull the base image along with the OS from the DockerHub.
     
     ```dockerfile
     FROM openjdk:latest (<tag>)
@@ -55,14 +55,14 @@ Keywords are the commands that tell the Docker Engine what to execute. Here are 
     # You can see all the available tags from DockerHub
     ```
     
-2. WORKDIR: This keyword is used to create a working directory inside the container where the application code will reside and run.
+2. `WORKDIR`: This keyword is used to create a working directory inside the container where the application code will reside and run.
     
     ```dockerfile
     WORKDIR app/
     # A directory named app has been created that will reside inside the container.
     ```
     
-3. COPY: This keyword is used to copy files and directories from the system into the working directory of the container.
+3. `COPY`: This keyword is used to copy files and directories from the system into the working directory of the container.
     
     ```dockerfile
     COPY app.js .
@@ -71,9 +71,9 @@ Keywords are the commands that tell the Docker Engine what to execute. Here are 
     # But if it does not then you can give the path of the code file.
     ```
     
-4. ADD: Similar to COPY but it has additional features like copying files, directories, or remote URLs from the local system or a remote location into the container. It can also automatically unpack compressed files COPY cannot do this.
+4. `ADD`: Similar to COPY but it has additional features like copying files, directories, or remote URLs from the local system or a remote location into the container. It can also automatically unpack compressed files COPY cannot do this.
     
-5. ENV: Used to set the environment variables that some services of the app may need to run.
+5. `ENV`: Used to set the environment variables that some services of the app may need to run.
     
     ```dockerfile
     ENV key=value
@@ -81,21 +81,21 @@ Keywords are the commands that tell the Docker Engine what to execute. Here are 
     #there may be cases when the application or the service may need these environment variables to run
     ```
     
-6. EXPOSE: It is used to expose the specified port i.e. the container will listen to this port. Listening on a port means it is actively waiting for incoming data or requests on that port.
+6. `EXPOSE`: It is used to expose the specified port i.e. the container will listen to this port. Listening on a port means it is actively waiting for incoming data or requests on that port.
     
     ```dockerfile
     EXPOSE 3000
     # The container will listen to port 3000.
     ```
     
-7. RUN: Executes commands inside the container during the image build process. It is used to install packages, set up dependencies, and perform any necessary configurations.
+7. `RUN`: Executes commands inside the container during the image build process. It is used to install packages, set up dependencies, and perform any necessary configurations.
     
     ```dockerfile
     RUN pip install flask
     # Like this you can run all the commands to download all the required dependencies.
     ```
     
-8. CMD: Specifies the default command to run when the container starts. Unlike the `RUN` keyword, `CMD` does not execute during image build; instead, it defines the command to run when a container is launched from the built Docker image.
+8. `CMD`: Specifies the default command to run when the container starts. Unlike the `RUN` keyword, `CMD` does not execute during image build; instead, it defines the command to run when a container is launched from the built Docker image.
     
     ```dockerfile
     CMD ["python","app.py"]
