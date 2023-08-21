@@ -344,7 +344,7 @@ Now that our project file structure is ready, let's containerize and deploy the 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692024903609/a543d8a9-ef69-4196-a393-82fb3dcd0041.png align="center")
 
-Run: `docker-compose up`
+Run: `docker-compose up -d`
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692025046374/22eba48e-acf3-48c9-9515-2db283930e5d.png align="center")
 
