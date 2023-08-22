@@ -54,41 +54,45 @@ tags: docker, devops-journey, 90daysofdevops, day20, dockercheatsheet
     
 8. `docker rmi $(docker images -q)`: Removes all the unused images, and throws an error if an image is in use.
     
-9. `docker run <image>`: Run a Docker container from the docker `<image>`.
+9. `docker image prune -a`: Removes only the unused or dangling images and not the images used by a container. Gives you a prompt to proceed or not.
     
-10. `docker run -d <image>`: Run a Docker container in the background `(-d: detached mode)`.
+10. `docker image prune -af`: `-f` flag is a force flag that removes unused images without giving a prompt.
     
-11. `docker run -d -p <host_port:container_port> <docker_image_name>`: Run a Docker container in the background.
+11. `docker run <image>`: Run a Docker container from the docker `<image>`.
+    
+12. `docker run -d <image>`: Run a Docker container in the background `(-d: detached mode)`.
+    
+13. `docker run -d -p <host_port:container_port> <docker_image_name>`: Run a Docker container in the background.
     
     `-p <host_port:container_port>`: This flag maps a port from the host machine to a port on the container. Replace `<host_port>` with the port number on the host machine, and `<container_port>` with the port number the container is listening on.
     
-12. **Pass Environment Variables to a Container:**
+14. **Pass Environment Variables to a Container:**
     
     ```bash
     bashCopy codedocker run -e VAR_NAME=value <image>
     ```
     
-13. `docker exec -it <container_id> <shell>`: Gives `-it` interactive terminal, a `<shell>` inside the running container to interact or run commands.
+15. `docker exec -it <container_id> <shell>`: Gives `-it` interactive terminal, a `<shell>` inside the running container to interact or run commands.
     
-14. `docker ps`: Lists all the running containers along with some additional information.
+16. `docker ps`: Lists all the running containers along with some additional information.
     
-15. `docker ps -a`: Lists all the containers running or stopped existing in the system.
+17. `docker ps -a`: Lists all the containers running or stopped existing in the system.
     
-16. `docker ps -q`: Lists only the `container_id` of all the running containers in the system.
+18. `docker ps -q`: Lists only the `container_id` of all the running containers in the system.
     
     `docker ps -qa`: Lists only the `container_id` of all the containers in the system.
     
-17. `docker inspect <container_id>`: Gives detailed information about the specified container like container configuration, network information, mount and volumes, resources, etc.
+19. `docker inspect <container_id>`: Gives detailed information about the specified container like container configuration, network information, mount and volumes, resources, etc.
     
-18. `docker logs <container_id>`: Gives logs generated while the container is running. This information helps in troubleshooting as we can see where an error has occurred.
+20. `docker logs <container_id>`: Gives logs generated while the container is running. This information helps in troubleshooting as we can see where an error has occurred.
     
-19. `docker kill <container_id>`: Used to forcefully terminate a running container without giving it a chance to perform any cleanup or shutdown procedures.
+21. `docker kill <container_id>`: Used to forcefully terminate a running container without giving it a chance to perform any cleanup or shutdown procedures.
     
-20. `docker stop <container_id>`: Used to gracefully stop a running container by allowing the process to perform any necessary cleanup tasks before the container shuts down.
+22. `docker stop <container_id>`: Used to gracefully stop a running container by allowing the process to perform any necessary cleanup tasks before the container shuts down.
     
-21. `docker rm <container_id>`: Used to remove the stopped container, and throws an error if the container is in use.
+23. `docker rm <container_id>`: Used to remove the stopped container, and throws an error if the container is in use.
     
-22. `docker rm $(docker ps -qa)`: Used to remove all the stopped containers.
+24. `docker rm $(docker ps -qa)`: Used to remove all the stopped containers.
     
     *(Note: Make sure no containers are running otherwise will throw an error.)*
     
