@@ -316,7 +316,7 @@ You can click on the node and select **Configure** if you want to make some chan
 
 ---
 
-# Running a Pipeline Job for Nodejs App on a Jenkins Agent
+# 📍Running a Pipeline Job for Nodejs App on a Jenkins Agent
 
 In the Jenkins **master** server, we will define a pipeline and create a job and the execution will be on the **agent** instance.
 
