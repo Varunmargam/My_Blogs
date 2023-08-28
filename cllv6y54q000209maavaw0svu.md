@@ -1,8 +1,8 @@
 ---
-title: "Kubernetes Fundementals: Features, Necessity, and Architectural Insights"
+title: "Kubernetes Fundamentals: Features, Necessity, and Architectural Insights"
 datePublished: Sun Aug 27 2023 18:30:00 GMT+0000 (Coordinated Universal Time)
 cuid: cllv6y54q000209maavaw0svu
-slug: kubernetes-fundementals-features-necessity-and-architectural-insights
+slug: kubernetes-fundamentals-features-necessity-and-architectural-insights
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1693245928110/8f5587a4-0d40-4885-982f-5e0c4917ee9f.png
 tags: kubernetes, devops-journey, kubernetes-architecture, 90daysofdevops, day30
 
