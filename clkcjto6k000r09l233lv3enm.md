@@ -1,8 +1,8 @@
 ---
-title: "Advanced Bash Scripting: Embarking your Scripting Mastery!"
+title: "Exploring Advanced Bash Scripting Concepts"
 datePublished: Fri Jul 21 2023 12:19:43 GMT+0000 (Coordinated Universal Time)
 cuid: clkcjto6k000r09l233lv3enm
-slug: advanced-bash-scripting-embarking-your-scripting-mastery
+slug: exploring-advanced-bash-scripting-concepts
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689941510646/bf9507ca-cd5c-4ca6-ab1d-823ffcf509ec.png
 tags: bash-script, 90daysofdevops, day5, trainwithshubham, devopsjourney
 
@@ -60,7 +60,7 @@ If you want to do a single thing multiple times in a script then we can use loop
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689931517114/b9c60d36-7ffa-4d6c-958d-cb45aae836ae.png align="center")
 
-📝Few things to note while writing loops in bh:📝
+📝 A few things to note while writing loops in bh:📝
 
 * For loops to run it needs 3 things ( initialization; condition; iteration )
     
@@ -103,17 +103,17 @@ The loop ends after iterating all the files inside the folder (where this script
 
 ## ✔While Loops
 
-It executes the same way the for-loop does which was discussed in my [Bash Scripting Basics](https://varunmargam.hashnode.dev/bash-scripting-basics-your-gateway-to-automation) blog. Just the syntax is different, it is something like:
+It executes the same way the for-loop does which was discussed in my [Bash Scripting Basics](https://varunmargam.hashnode.dev/bash-scripting-basics-your-gateway-to-automation) blog. The syntax is different, it is something like:
 
 ```bash
 while [ condition ];
 do
     # statements
     # commands
-done  
+done
 ```
 
-If the condition is true then the commands inside the while block are executed and are iterated again after checking the condition. Also if the condition is false the statements inside the while block are skipped and the statements after the while block are executed. 
+If the condition is true then the commands inside the while block are executed and are iterated again after checking the condition. Also if the condition is false the statements inside the while block are skipped and the statements after the while block are executed.
 
 Let's convert the for-loop example from the [Bash Scripting Basics](https://varunmargam.hashnode.dev/bash-scripting-basics-your-gateway-to-automation) blog into a while-loop. In the while-loop the script will be something like this:
 
@@ -192,7 +192,7 @@ The tar command options are `czf` which means compress, zip, and file- points to
 
 `Step 3`
 
-Then move the compressed file to the backups directory using the command `#mv`.
+Then move the compressed file to the backup directory using the command `#mv`.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689938265168/3159f1c6-b0a5-4365-a8f7-8b116a15fddd.png align="center")
 
@@ -279,7 +279,7 @@ In the above image, I am redirecting the output of the command to a file by spec
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689940593250/09179644-72d6-4c7f-bd0b-91c2c3923987.png align="center")
 
-As you can see the crontab was empty therefore, it was creating a new crontab, and we can also see the time is 11:51 (hrs: minutes) and our cronjob will be executed at 11:54 since we scheduled it for that time.
+As you can see the crontab was empty therefore, it was creating a new crontab, we can also see the time is 11:51 (hrs: minutes) and our cronjob will be executed at 11:54 since we scheduled it for that time.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689940743543/d2802857-8d8c-4289-97ec-1bffdf29f2db.png align="center")
 
