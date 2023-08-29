@@ -1,8 +1,8 @@
 ---
-title: "Mastering Docker: Containerize Your Application with Dockerfile, Docker Image, and Containers"
+title: "Exploring Docker: Containerize Your Application with Dockerfile, Docker Image, and Containers"
 datePublished: Mon Aug 07 2023 11:16:39 GMT+0000 (Coordinated Universal Time)
 cuid: cll0s214k000q09mgc4vjccg3
-slug: mastering-docker-containerize-your-application-with-dockerfile-docker-image-and-containers
+slug: exploring-docker-containerize-your-application-with-dockerfile-docker-image-and-containers
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1691412118087/b02aaea4-18d7-4884-bcfd-bd958fa99553.webp
 tags: docker, containerization, devops-journey, 90daysofdevops, day17
 
