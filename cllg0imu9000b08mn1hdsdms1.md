@@ -1,8 +1,8 @@
 ---
-title: "Jenkins Essentials: A Comprehensive Introduction to Automation"
+title: "Exploring Jenkins Fundamentals: An Introduction to Automation"
 datePublished: Fri Aug 18 2023 03:10:03 GMT+0000 (Coordinated Universal Time)
 cuid: cllg0imu9000b08mn1hdsdms1
-slug: jenkins-essentials-a-comprehensive-introduction-to-automation
+slug: exploring-jenkins-fundamentals-an-introduction-to-automation
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1692327706287/f8ff6cdd-64b4-4d01-8bc3-75ea782cc20d.png
 tags: automation, jenkins, devops-journey, 90daysofdevops, day22
 
