@@ -1,8 +1,8 @@
 ---
-title: "Mastering Advance Linux Commands for DevOps Excellence (Part 2)"
+title: "Exploring Advanced Linux Commands (Part 2)"
 datePublished: Sun Jul 23 2023 15:02:04 GMT+0000 (Coordinated Universal Time)
 cuid: clkfki5pb000209jqgtb8e4go
-slug: mastering-advance-linux-commands-for-devops-excellence-part-2
+slug: exploring-advanced-linux-commands-part-2
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690124423675/7f3aff6b-ddb3-498e-9a0b-405b8a76c677.png
 tags: devops-journey, 90daysofdevops, day7, trainwithshubham, linuxsystemadministration
 
@@ -12,7 +12,7 @@ tags: devops-journey, 90daysofdevops, day7, trainwithshubham, linuxsystemadminis
 
 # 📍Introduction
 
-📚 In this 2-part blog series, we'll explore some more Advance Linux commands! After learning and mastering basic Linux commands and getting introduced to advance Linux in the previous blog we are now ready to learn some advance Linux commands. By the end, you'll be familiar with piping, redirection, sudoers file, some administrative commands, etc 💪. Get ready to unlock the potential of Linux commands and join me on this exciting Linux journey! 🚀
+📚 In this 2-part blog series, we'll explore some more advanced Linux commands! After learning and mastering basic Linux commands and getting introduced to advanced Linux in the previous blog we are now ready to learn some advanced Linux commands. By the end, you'll be familiar with piping, redirection, sudoers file, some administrative commands, etc 💪. Get ready to unlock the potential of Linux commands and join me on this exciting Linux journey! 🚀
 
 ---
 
@@ -72,7 +72,7 @@ These redirections will be very helpful while writing Shell scripts.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690120806216/3ddcd3de-07e9-48b3-bbb3-9099e2bf79dc.png align="center")
     
-    But if any error occurred while executing the command it will show it on the screen to redirect such an error we use `2>>`.
+    But if any error occurs while executing the command it will show it on the screen to redirect such an error we use `2>>`.
     
 3. `2>>`: It is used to redirect errors while executing the command to a file.
     
@@ -141,7 +141,7 @@ If while editing this sudoers file there is any syntax error then it will give t
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690122608407/4544f7cf-c46f-4c4c-8d28-c58818529de2.png align="center")
 
-Important: Be careful while editing the sudoers file if you save the file with the syntax error then you will not be able to execute the sudo command and you will also not have the root password (for security reasons) and you will be stuck.
+Important: Be careful while editing the sudoers file If you save the file with the syntax error then you will not be able to execute the sudo command and you will also not have the root password (for security reasons) and you will be stuck.
 
 Now the `aryan` user can execute sudo commands and switch to the root user.
 
@@ -185,9 +185,9 @@ Only the root user and user who can execute the `sudo` command can install or re
 
 # 📍Systemctl - Services
 
-There are many services that we will use as DevOps engineers, to administer that services is very important and every DevOps engineer should know.
+There are many services that we will use as DevOps engineers, to administer those services is very important and every DevOps engineer should know.
 
-`#systemctl`: This command helps us to manage or control or administer a service.
+`#systemctl`: This command helps us to manage control or administer a service.
 
 Syntax: `#systemctl subcommand service`
 
@@ -230,7 +230,7 @@ But there are many subcommands to remember them is very difficult, for that use 
 
 Thank you for reading this blog! 📖 We've reached the end of this Advance Linux Commands blog. You are now familiar with some Linux system administration commands as well. Keep practicing these commands, and get familiar with them. 💻 Master Linux system administration and keep learning. Stay tuned for more valuable content coming your way!
 
-If you enjoyed this blog and found it helpful, please give it a like 👍, share it with your friends, do share your thoughts, and give me some valuable feedback.😇 Don't forget to follow me for more such blogs! 🌟
+If you enjoyed this blog and found it helpful, please give it a like 👍, share it with your friends, share your thoughts, and give me some valuable feedback.😇 Don't forget to follow me for more such blogs! 🌟
 
 ---
 
