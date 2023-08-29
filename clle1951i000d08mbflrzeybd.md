@@ -1,8 +1,8 @@
 ---
-title: "Docker Cheatsheet: A Comprehensive Resource for DevOps Professionals"
+title: "Docker Cheatsheet: Compiling My Docker Knowledge."
 datePublished: Wed Aug 16 2023 17:55:07 GMT+0000 (Coordinated Universal Time)
 cuid: clle1951i000d08mbflrzeybd
-slug: docker-cheatsheet-a-comprehensive-resource-for-devops-professionals
+slug: docker-cheatsheet-compiling-my-docker-knowledge
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1692206051745/0d15738a-106e-404b-b44b-1c38e30217d1.png
 tags: docker, devops-journey, 90daysofdevops, day20, dockercheatsheet
 
