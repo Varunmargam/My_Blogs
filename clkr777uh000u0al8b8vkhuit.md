@@ -14,7 +14,7 @@ tags: python3, devops-journey, 90daysofdevops, day15, trainwithshubham
 
 📚Welcome to Part 3 of the Python for DevOps Blog Series!🐍
 
-In this blog, we will learn about Modules, Packages, Libraries, and File-Handling in Python. We will be learning Python from the basics to all the necessary things you will require for all your DevOps tasks. Let's unlock Python's potential in DevOps together!🌟
+In this blog, we will learn about Modules, Packages, Libraries, and File handling in Python. We will be learning Python from the basics to all the necessary things you will require for all your DevOps tasks. Let's unlock Python's potential in DevOps together!🌟
 
 ---
 
