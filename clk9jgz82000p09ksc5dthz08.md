@@ -1,8 +1,8 @@
 ---
-title: "Mastering Basic Linux Commands for DevOps Excellence (Part 2)"
+title: "Exploring Basic Linux Commands (Part 2)"
 datePublished: Wed Jul 19 2023 09:46:33 GMT+0000 (Coordinated Universal Time)
 cuid: clk9jgz82000p09ksc5dthz08
-slug: mastering-basic-linux-commands-for-devops-excellence-part-2
+slug: exploring-basic-linux-commands-part-2
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689731016031/a1c5200a-28f8-4f02-8a6c-efb0907d79bd.png
 tags: linux-for-beginners, devops-journey, 90daysofdevops, day3, trainwithshubham
 
