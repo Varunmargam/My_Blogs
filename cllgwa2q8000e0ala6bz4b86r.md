@@ -1,8 +1,8 @@
 ---
-title: "Mastering Jenkins: A Comprehensive Guide to Continuous Delivery and Deployment"
+title: "Jenkins Step-by-Step Guide on Crafting a Continuous Delivery and Deployment Pipeline"
 datePublished: Fri Aug 18 2023 17:59:11 GMT+0000 (Coordinated Universal Time)
 cuid: cllgwa2q8000e0ala6bz4b86r
-slug: mastering-jenkins-a-comprehensive-guide-to-continuous-delivery-and-deployment
+slug: jenkins-step-by-step-guide-on-crafting-a-continuous-delivery-and-deployment-pipeline
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1692381423778/dbc4d964-8925-466d-a5a0-6bbfdc8fc733.png
 tags: jenkins, devops-journey, 90daysofdevops, day23, freestyle-jenkins-project
 
@@ -290,7 +290,7 @@ Now let's make commit some changes to the code.
 
 While committing the code keep the Jenkins tab and the GitHub tab side-by-side like this:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692374755912/006702ee-d688-4b6a-a613-d4f050efe03e.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692445522467/d87f36e0-ab48-4a96-9f0c-a95d66eba49c.png align="center")
 
 Making changes:
 
