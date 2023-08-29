@@ -1,11 +1,13 @@
 ---
-title: "Mastering Basic Linux Commands for DevOps Excellence (Part 1)🐧"
+title: "Exploring Basic Linux Commands (Part 1)🐧"
 datePublished: Tue Jul 18 2023 18:29:04 GMT+0000 (Coordinated Universal Time)
 cuid: clk8mp3ff000009lb7v86hjjy
-slug: mastering-basic-linux-commands-for-devops-excellence-part-1
+slug: exploring-basic-linux-commands-part-1
 canonical: https://varunmargam.hashnode.dev/mastering-basic-linux-commands-for-devops-excellence-part-1
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689770842344/3fa427c6-3dcb-4dec-846c-2c69776c7c52.png
 tags: linux-for-beginners, devops-journey, 90daysofdevops, day2, trainwithshubham
+
+---
 
 ---
 
@@ -15,7 +17,9 @@ tags: linux-for-beginners, devops-journey, 90daysofdevops, day2, trainwithshubha
 
 📚Before diving into the commands, let's **familiarize** ourselves with key **Linux terminologies** frequently used to enhance our understanding.🧐
 
-## Linux terminologies used often :
+---
+
+# 📍Linux Terminologies
 
 1. ### 📂Directory: 📂
     
@@ -93,9 +97,9 @@ tags: linux-for-beginners, devops-journey, 90daysofdevops, day2, trainwithshubha
     
     This command displays process-related information, including:
     
-    * PID - Process ID
+    * **PID** \- Process ID
         
-    * PPID - Parent process ID
+    * **PPID** \- Parent process ID
         
     
     You can see that the root process has process id as 1. PID 0 is for the process executed at the booting time.
@@ -107,6 +111,8 @@ tags: linux-for-beginners, devops-journey, 90daysofdevops, day2, trainwithshubha
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689696336076/d40cd205-7f62-4246-b967-08eecf7229ad.png align="center")
 
+---
+
 # 📍 Ready to Dive into Basic Linux Commands🐧? Let's Go! 🚀💻
 
 Now that we have covered the fundamental Linux terminologies, it's time to explore some essential Linux commands. Get ready to unleash the power of the command line and take your Linux skills to the next level! 💪🔥
@@ -117,7 +123,7 @@ Now that we have covered the fundamental Linux terminologies, it's time to explo
 
 When working with commands in Linux, you'll come across various scenarios where options, source, and destination parameters **may or may not be required** for successful execution.
 
-## Here are some basic commands:
+## ✔Here are some basic commands:
 
 1. `#whoami`: displays the currently logged-in user name.
     
@@ -163,6 +169,8 @@ When working with commands in Linux, you'll come across various scenarios where 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689699548726/015d2e38-219b-4083-a4d9-c07d0bf4198c.png align="center")
 
+---
+
 # 📍Path - absolute and relative.
 
 ### Q) What is a path?
@@ -186,7 +194,9 @@ Ans - A path is a unique location of a file or a folder in a file system. There 
 
 After `#pwd` command when we were in `/home/ubuntu` directory to go to `devopsdir` we can put **relative path** `linux-practice/devopsdir` since `linux-practice` is available in the current directory but if it was not present then I would have to mention the absolute path i.e. `#/home/ubuntu/linux-practice/devopsdir.`
 
-This path can be specified while writing commands which require &lt;source&gt;,&lt;destination&gt; as a parameter.
+This path can be specified while writing commands that require &lt;source&gt;, and &lt;destination&gt; as a parameter.
+
+---
 
 # 📍Create a directory and file.
 
@@ -202,8 +212,7 @@ This path can be specified while writing commands which require &lt;source&gt;,&
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689700837245/36d119f2-d66d-4b20-8516-dfadb18eb9eb.png align="center")
     
-
-1. `#touch <filename>`: Creates a file named &lt;filename&gt; in the present working directory.
+5. `#touch <filename>`: Creates a file named &lt;filename&gt; in the present working directory.
     
     1. `#touch filename{1..10}`: Creates 10 files as specified in '`{}`'.
         
@@ -211,6 +220,8 @@ This path can be specified while writing commands which require &lt;source&gt;,&
         
         Try to run touch commands on your own.
         
+
+---
 
 # 📍Perform operations on a file & directories
 
@@ -222,7 +233,7 @@ This path can be specified while writing commands which require &lt;source&gt;,&
         
     * `#cd ~` - Goes back to the /home/username directory.
         
-        ***Note: Here, (~) represent /home/username.***
+        ***Note: Here, (***`~`***) represents*** `/home/username`***.***
         
         ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689701192289/2abcfee5-195a-42a1-a16f-9bc33c928b15.png align="center")
         
@@ -255,13 +266,17 @@ This path can be specified while writing commands which require &lt;source&gt;,&
 
 💡Tip: It is not feasible to know all options for every command for that we have a manual for every command on how to use it provided by Linux which can be seen using the command:
 
-`#man command_name` and press 'Q key' to quit the manual.
+`#man command_name` and press the 'Q key' to quit the manual.
 
 Try this "man" command yourself example "`#man ls`".
+
+---
 
 # 📍Conclusion
 
 Stay tuned for the next part of this 2-part blog series, where we'll dive deeper into more essential Linux commands! In the meantime, keep practicing the commands we've covered so far, play around with them, and enhance your comfort level with Linux. Stay tuned! 🚀💻
+
+---
 
 # 📍References
 
@@ -270,3 +285,6 @@ Stay tuned for the next part of this 2-part blog series, where we'll dive deeper
 * [ChatGPT](https://openai.com/chatgpt)
     
 * [Google](http://google.com)
+    
+
+---
