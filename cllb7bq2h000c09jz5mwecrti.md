@@ -1,8 +1,8 @@
 ---
-title: "Mastering Docker Compose: Building a 2-Tier Flask To-Do Web App"
+title: "Exploring Docker Compose: Building a 2-Tier Flask To-Do Web App"
 datePublished: Mon Aug 14 2023 18:21:47 GMT+0000 (Coordinated Universal Time)
 cuid: cllb7bq2h000c09jz5mwecrti
-slug: mastering-docker-compose-building-a-2-tier-flask-to-do-web-app
+slug: exploring-docker-compose-building-a-2-tier-flask-to-do-web-app
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1692037151914/2549617c-d348-4a5b-91e6-f32eb9308630.jpeg
 tags: docker, docker-compose, devops-journey, 90daysofdevops, day18
 
