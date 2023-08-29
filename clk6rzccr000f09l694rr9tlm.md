@@ -10,17 +10,21 @@ tags: devops, devops-journey, 90daysofdevops, trainwithshubham, day01
 
 ---
 
-## 📍Introduction
+---
+
+# 📍Introduction
 
 In this blog, we will explore the world of DevOps, its **definition**, its **importance**, the **challenges** it aims to solve and some **technical terms** related to it.
 
 Let's begin by understanding the **common software development process** followed by **IT companies**💻.
 
+---
+
 ## 📍Traditional Software Development🚀
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689532963935/37d98777-770b-4bc2-b426-3b8769891c7d.png align="center")
 
-**This image represents Software Development Life Cycle(SDLC).**
+**This image represents the Software Development Life Cycle(SDLC).**
 
 It includes 7 Steps which are:
 
@@ -51,6 +55,8 @@ The software is deployed to the production environment, involving manual configu
 ### 🔧 Operations and Maintenance: 🛠️
 
 The operations team takes over, monitoring the software's performance, addressing bugs(issues), and applying updates or patches as needed.
+
+---
 
 # 📍What is DevOps?
 
@@ -123,7 +129,7 @@ Testing the software on different levels involves:
 
 * **Test specific features**: Conduct tests to verify the functionality and performance of specific features within the software.
     
-* **End-to-End tests**: Testing the software's complete flow, including multiple components and interactions, to ensure seamless integration and functionality.
+* **End-to-end tests**: Testing the software's complete flow, including multiple components and interactions, to ensure seamless integration and functionality.
     
 * **Testing on different environments:** Verifying the software's performance and compatibility across various environments, such as different operating systems or browsers.
     
@@ -148,7 +154,7 @@ This manual work is slow & more error-prone, it is hard to trace, intransparent,
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689568882629/d9fcc6d0-2557-47a3-b008-2b5e2b2cf89c.png align="center")
 
-By **overcoming these limitations** and making the **SDLC process fast** with **minimal** **bugs** and ensuring **high-quality well tested** software/products will be deployed integration of **DevOps** in SDLC becomes **very important.**
+By **overcoming these limitations** making the **SDLC process fast** with **minimal** **bugs** and ensuring **high-quality well-tested** software/products will be deployed integration of **DevOps** in SDLC becomes **very important.**
 
 ---
 
@@ -192,7 +198,7 @@ DevOps is a collaborative approach that unites developers and operations profess
     
     1. **Web Servers** host the website's files and handle user requests. They ensure that web pages are delivered to users' browsers when they access the website.
         
-    2. **Hosting Environment**, the website needs a hosting environment, which can be provided by a web hosting service or by setting up servers in-house. The hosting environment ensures that the website is accessible to users via the Internet.
+    2. **Hosting Environment**, The website needs a hosting environment, which can be provided by a web hosting service or by setting up servers in-house. The hosting environment ensures that the website is accessible to users via the Internet.
         
     3. A **Database** system is used to store and manage product information, customer data, and other relevant data. This allows for efficient retrieval and management of information required by the website.
         
