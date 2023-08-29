@@ -1,9 +1,9 @@
 ---
-title: ""Git & GitHub Cheatsheet: The Developer's Quick Reference"
+title: "Git & GitHub Cheatsheet: Compiling my Knowledge"
 seoTitle: "Your Go-To Git & GitHub Cheatsheet: Boosting Productivity in Developme"
 datePublished: Wed Aug 02 2023 03:44:11 GMT+0000 (Coordinated Universal Time)
 cuid: clkt6owss000209ifalnrapav
-slug: git-github-cheatsheet-the-developers-quick-reference
+slug: git-github-cheatsheet-compiling-my-knowledge
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690946172737/82fdce1b-088c-48bc-8cae-b74cba8bddb7.png
 tags: gitcheatsheet, devops-journey, 90daysofdevops, day12, trainwithshubham
 
