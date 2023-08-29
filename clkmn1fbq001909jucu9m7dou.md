@@ -1,8 +1,8 @@
 ---
-title: "Linux Cheat Sheet: Essential Commands for Everyday Efficiency"
+title: "Linux Cheat Sheet: Compiling My Linux Knowledge"
 datePublished: Fri Jul 28 2023 13:47:26 GMT+0000 (Coordinated Universal Time)
 cuid: clkmn1fbq001909jucu9m7dou
-slug: linux-cheat-sheet-essential-commands-for-everyday-efficiency
+slug: linux-cheat-sheet-compiling-my-linux-knowledge
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690551547849/f613c749-a148-4a38-b59b-2669eae2207c.png
 tags: devops-journey, 90daysofdevops, day12, trainwithshubham, linuxcheatsheet
 
