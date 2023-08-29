@@ -1,8 +1,8 @@
 ---
-title: "Docker Explained: Understanding the Power of Containerization"
+title: "Understanding Docker:  The Power of Containerization"
 datePublished: Fri Aug 04 2023 04:17:46 GMT+0000 (Coordinated Universal Time)
 cuid: clkw2rt15000909mb2a3l8ocm
-slug: docker-explained-understanding-the-power-of-containerization
+slug: understanding-docker-the-power-of-containerization
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1691122232088/4241270b-7ed1-4bd4-9e40-05035a67be6d.png
 tags: docker, containerization, devops-journey, 90daysofdevops, day16
 
@@ -20,7 +20,7 @@ Let's just dive into this Docker tool and get introduced to the world of contain
 
 # 📍Operating System
 
-Operating System is nothing but an interface between you and your computer hardware. It allows you to perform various tasks such as running applications, creating a file or a folder, etc by the hardware to execute these tasks. It has 2 major components:
+The Operating System is nothing but an interface between you and your computer hardware. It allows you to perform various tasks such as running applications, creating a file or a folder, etc. by the hardware to execute these tasks. It has 2 major components:
 
 * **User Interface**: It is the graphical representation of your OS. It allows the user to have a user-friendly environment where they can perform various tasks and run applications. The GUI of Ubuntu Linux looks something like this:
     
