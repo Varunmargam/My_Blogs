@@ -252,11 +252,11 @@ Remember creating a Dockerfile of any program will come from practice so keep pr
 
 # 📍Conclusion
 
-Now, you will be able to build Dockerfile for any Node js application and containerize it. Take some more applications of Node js or a Flask app or MySQL service and try to containerize it. You will get errors, but don't worry it is a part of the process try to google the error, explore, and learn more steadily you will become confident in writing a Dockerfile for any Tier 1 application.
+Now, you will be able to build a Dockerfile for any Node js application and containerize it. Take some more applications of Node js or a Flask app or MySQL service and try to containerize it. You will get errors, but don't worry it is a part of the process try to google the error, explore, and learn more steadily you will become confident in writing a Dockerfile for any Tier 1 application.
 
 Thank you for reading this blog! 📖 Hope you have gained some value.
 
-If you enjoyed this blog and found it helpful, please give it a like 👍, share it with your friends, do share your thoughts, and give me some valuable feedback.😇 Don't forget to follow me for more such blogs! 🌟
+If you enjoyed this blog and found it helpful, please give it a like 👍, share it with your friends, share your thoughts, and give me some valuable feedback.😇 Don't forget to follow me for more such blogs! 🌟
 
 ---
 
