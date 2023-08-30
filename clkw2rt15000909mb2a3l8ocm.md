@@ -85,11 +85,11 @@ We would set up three separate virtual machines, each hosting one component of t
 
 **Challenges with Multiple VMs:**
 
-* **Resource Overhead**: Each VM requires a full operating system, leading to more resources and VM takes time to boot.
+* **Resource Overhead**: Each VM requires a full operating system, leading to more resources and the VM takes time to boot.
     
-* **Scalability**: To make our website run in production we would have to provide High availability meaning multiple VMs for frontend, backend, and database to ensure if any of the VM stops running then another VM can be initiated.
+* **Scalability**: To make our website run in production we would have to provide High availability meaning multiple VMs for frontend, backend, and database to ensure if any of the VMs stops running then another VM can be initiated.
     
-* **Time**: As VM has its OS it takes time to boot and start and run the service. In the case of multiple VM, the time lag can be large and can decrease the engagement of the users.
+* **Time**: As VM has its OS it takes time to boot and start and run the service. In the case of multiple VMs, the time lag can be large and can decrease the engagement of the users.
     
 * **Configuration Management**: Managing and synchronizing the configurations and dependencies across multiple VMs can be more complex. At every stage, we would have to repeat this process.
     
@@ -100,7 +100,7 @@ Now, let's understand Docker a bit more and then continue with this same scenari
 
 # 📍Docker Components
 
-1. **Docker Image**: A Docker Image is like a Screenshot of an application where it contains all the necessary dependencies, libraries, code, and files to run the application. It can run the application with a single command and can be easily shared and run on any computer that has Docker. It is a lightweight portable package. Docker images are the blueprints for creating Docker containers. A docker image is a repository in a Registry.
+1. **Docker Image**: A Docker Image is like a Screenshot of an application that contains all the necessary dependencies, libraries, code, and files to run the application. It can run the application with a single command and can be easily shared and run on any computer that has Docker. It is a lightweight portable package. Docker images are the blueprints for creating Docker containers. A docker image is a repository in a Registry.
     
 2. **Docker Container**: It is a box that provides an isolated executable environment for Docker images to run. It is a lightweight environment created from the running instance of the Docker image. When you run a Docker container, it becomes an active process with its own isolated filesystem, network, and process space. Containers leverage the host operating system's kernel, making them faster and more efficient compared to traditional virtual machines.
     
@@ -110,7 +110,7 @@ Now, let's understand Docker a bit more and then continue with this same scenari
         
         The Docker daemon is a background service that runs on the host machine. It manages all the containers and communicates with the host's operating system to allocate resources, manage networking, and handle storage. The Docker daemon is responsible for creating, starting, stopping, and deleting containers based on the commands you give through the Docker CLI (Command Line Interface) or other Docker tools.
         
-    * **Docker CLI**: It is a command-line tool that allows users to interact with the Docker daemon and perform various operations on containers and images. You can use the Docker CLI to pull Docker images from Docker Hub Registry, create and manage containers, check their status, and more.
+    * **Docker CLI**: It is a command-line tool that allows users to interact with the Docker daemon and perform various operations on containers and images. You can use the Docker CLI to pull Docker images from the Docker Hub Registry, create and manage containers, check their status, and more.
         
 4. **Docker Hub (Registry)**: It is like a huge online store in the cloud where you can find Docker images. You can also share your Docker images by uploading them to Docker Hub using a simple Docker command. It is a huge library and community of Docker images. Docker Hub is the **default** **registry,** if Docker cannot find an image locally it downloads it from the Docker Hub.
     
@@ -149,11 +149,11 @@ Docker allows us to package each component along with its dependencies, librarie
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1691108830993/a29c4925-d5dd-43bd-9604-2552f669d8cc.webp align="center")
 
-* **Hypervisor** sits on top of the infrastructure and allows to create VMs with their OS called Guest OS.
+* **Hypervisor** sits on top of the infrastructure and allows the creation of VMs with their OS called Guest OS.
     
 * **Docker** Engine uses the Host OS for its operations and helps you run and manage the containers. Since they have no OS they are lightweight processes and take less time to boot therefore, we can run more containers.
     
-* **Virtualization** is a Hardware virtualization since you get virtual RAM, virtual CPU, virtual Hardware, etc so you can install an OS to create a Virtual Machine.
+* **Virtualization** is Hardware virtualization since you get virtual RAM, virtual CPU, virtual Hardware, etc. so you can install an OS to create a Virtual Machine.
     
 * Since processes need OS to run **Docker** creates an illusion of having an OS inside the container for the process to run. Therefore, containerization is OS Virtualization.
     
@@ -201,7 +201,7 @@ Start your first Docker Container using the command `docker run`:
 
 Thank you for reading this blog! 📖 Hope you have gained some value.
 
-If you enjoyed this blog and found it helpful, please give it a like 👍, share it with your friends, do share your thoughts, and give me some valuable feedback.😇 Don't forget to follow me for more such blogs! 🌟
+If you enjoyed this blog and found it helpful, please give it a like 👍, share it with your friends, share your thoughts, and give me some valuable feedback.😇 Don't forget to follow me for more such blogs! 🌟
 
 ---
 
