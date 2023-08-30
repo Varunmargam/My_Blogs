@@ -40,12 +40,12 @@ To containerize this application, we adopt a strategy of isolating each program 
 
 **The approach involves two main steps**:
 
-1. **Organizing Directory Structure**: We create two directories—one for the front end and another for the back end. Within these directories, we place the respective code along with their dedicated Dockerfiles. Meanwhile, the Dockerfile for the database resides in the project directory where the front-end and back-end directories are located.
+1. **Organizing Directory Structure**: We create two directories—one for the front end and another for the back end. Within these directories, we place the respective codes along with their dedicated Dockerfiles. Meanwhile, the Dockerfile for the database resides in the project directory where the front-end and back-end directories are located.
     
 2. **Building and Running Containers**: Once the directories and Dockerfiles are in place, we initiate the process by executing `docker build` and `docker run` for each `Dockerfile`. This step efficiently constructs the containers, encapsulating the distinct tiers.
     
 
-Consider this scenario: we previously discussed a 3-tier architecture, but now imagine a more complex microservice architecture where each service needs to be containerized. The manual approach we discussed earlier would become impractical in this context. Fortunately, there's a more efficient solution: "Docker Compose."
+Consider this scenario: We previously discussed a 3-tier architecture, but now imagine a more complex microservice architecture where each service needs to be containerized. The manual approach we discussed earlier would become impractical in this context. Fortunately, there's a more efficient solution: "Docker Compose."
 
 Docker Compose is a tool that comes with a program called docker-compose. It offers a streamlined method for managing multi-container applications. Instead of individually building and launching containers, Docker Compose allows us to define all the necessary actions in a single **configuration file**. This file outlines how to build and run multiple Docker containers concurrently, eliminating the need for repetitive tasks. Operations like `docker-compose up` and `docker-compose down` simplify the process further. The configuration file itself is written in **YAML (Yet Another Markup Language)**, and it typically carries the name "`docker-compose.yml`" for convention's sake
 
