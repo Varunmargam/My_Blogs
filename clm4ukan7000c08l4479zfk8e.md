@@ -1,8 +1,8 @@
 ---
-title: "K8's Assignment Deploying Flask-Microserivces and Reddit Clone Application."
+title: "K8's Assignment Deploying Flask-Microservices and Reddit Clone Application"
 datePublished: Sun Sep 03 2023 18:30:00 GMT+0000 (Coordinated Universal Time)
 cuid: clm4ukan7000c08l4479zfk8e
-slug: k8s-assignment-deploying-flask-microserivces-and-reddit-clone-application
+slug: k8s-assignment-deploying-flask-microservices-and-reddit-clone-application
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1693829709485/7e1ff9e7-26a5-4fc7-bf20-ee496b12c1d7.png
 tags: kubernetes, reddit, flask-cje4g3tgk00wdm0wtaepqxd29, devops-journey, 90daysofdevops
 
