@@ -468,7 +468,7 @@ Now, follow the Kubeadm installation steps in this GitHub URL [Kuberstarter](htt
 
 # 📍Conclusion
 
-Thank you for reading this blog! 📖 Hope you have gained some value. In the future blog, we will be launching a Kubernetes cluster with nginx running on it. Until then get more familiarized with the Kubernetes cluster. If you want to practice Kubernetes make sure you do it on minikube or at [killercoda.com](https://killercoda.com/) where you get K8s playground for free.
+Thank you for reading this blog! 📖 Hope you have gained some value. In the future blog, we will be launching a Kubernetes cluster with nginx running on it. Until then get more familiarized with the Kubernetes cluster. If you want to practice Kubernetes make sure you do it on Minikube or at [killercoda.com](https://killercoda.com/) where you get K8s playground for free.
 
 If you enjoyed this blog and found it helpful, please give it a like 👍, share it with your friends, share your thoughts, and give me some valuable feedback.😇 Don't forget to follow me for more such blogs! 🌟
 
