@@ -48,7 +48,7 @@ ClusterIP service provides the following functionalities:
 
 ## ✔NodePort
 
-The NodePort service is mainly used to access our application outside the K8s cluster i.e. without logging into the cluster. When we define a `NodePort` service exposes a port `nodePort` that we had defined in its manifest files on all the nodes, where we can access the application using the Node IP.
+The NodePort service is mainly used to access our application outside the K8s cluster i.e. without logging into the cluster. When we define a `NodePort` service exposes a port `nodePort` that we had defined in its manifest files on all the nodes, where we can access the application using the **Node IP**.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694611691316/6338bd88-8ddc-44c3-aec1-a1b8388ed0d8.png align="center")
 
@@ -65,7 +65,7 @@ NodePort service provides the following functionalities:
 
 ## ✔LoadBalancer
 
-We were accessing the application within the cluster or the organization using the above 2 services. To access the application outside the system by an external user who can use a Public IP we use the **LoadBalancer** service. There are some other methods to make the application running inside a cluster externally accessible. This service can only be used when you are running the Kubernetes cluster on any Cloud Service Provider Platform like AWS, Azure, Google Cloud, etc.
+We were accessing the application within the cluster or the organization using the above 2 services. To access the application outside the system by an external user who can use a Public IP we use the **LoadBalancer** service. There are some other methods to make the application running inside a cluster externally accessible. This service can only be used when you are running the Kubernetes cluster on any Cloud Service Provider Platform like **AWS**, **Azure**, **Google Cloud**, **etc**.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694702653223/f877efd3-301c-47d2-a272-4c140a0aa5ae.png align="center")
 
@@ -269,7 +269,9 @@ Let's try and apply a Service of type **NodePort** and access the application ou
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694710049792/8724f27c-ed8e-4c1d-ba5a-734bdc953f81.png align="center")
 
-Now, let's try to access the application externally using a public IP with LoadBalancer service.
+You can also try to access it on the browser using the same IP, make sure you allow the inbound traffic at `port 30007` ( `https://<NodeIP>:<nodePort>` on the browser )
+
+Now, let's try to access the application using a public IP with LoadBalancer service making it accessible for external users.
 
 `Step 16`: Delete the **NodePort** service using `kubectl delete svc <service_name> -n <namespace>`:
 
