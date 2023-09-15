@@ -48,7 +48,7 @@ ClusterIP service provides the following functionalities:
 
 ## ✔NodePort
 
-The NodePort service is mainly used to access our application outside the K8s cluster i.e. without logging into the cluster. When we define a `NodePort` service exposes a port `nodePort` that we had defined in its manifest files on all the nodes, where we can access the application using the **Node IP**.
+The NodePort service is mainly used to access our application outside the K8s cluster i.e. without logging into the cluster. When we define a `NodePort` service, it exposes a port called `nodePort` that we had defined in its manifest files on all the nodes, where we can access the application using the **Node IP**.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694611691316/6338bd88-8ddc-44c3-aec1-a1b8388ed0d8.png align="center")
 
