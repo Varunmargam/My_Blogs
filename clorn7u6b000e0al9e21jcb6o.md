@@ -1,6 +1,6 @@
 ---
 title: "Apiwiz Assignment"
-datePublished: Thu Nov 09 2023 20:30:05 GMT+0000 (Coordinated Universal Time)
+datePublished: Thu Nov 09 2023 18:30:00 GMT+0000 (Coordinated Universal Time)
 cuid: clorn7u6b000e0al9e21jcb6o
 slug: apiwiz-assignment
 
