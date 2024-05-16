@@ -332,9 +332,6 @@ spec:
         
         * `matchLabels`**:** Specifies the labels that the Deployment uses to select the pods it should manage.
             
-
-(Give me a list of labels that we can specify in the matchLabels field in the Deployment manifest file (ChatGPT unavailable)
-
 * `template`**:** Describes the pods that the Deployment creates and manages:
     
     * `metadata`**:** Contains metadata about the pod template:
@@ -358,7 +355,7 @@ Ans:
         
 2. **Deployment (**`apiVersion: apps/v1`):
     
-    * **Deployments**, **ReplicaSets**, and other higher-level resources for managing application deployment were grouped under the `apps` **API group** to maintain a separation from the `core` resources.
+    * **Deployments**, **ReplicaSets**, and other higher-level resources for managing application deployment were grouped under the `apps`**API group** to maintain a separation from the `core` resources.
         
 
 As there were updates in K8s more and more **API objects** were introduced that provided effective management of resources. Here is a **list** of some **common API groups** that will be useful while defining a Manifest file for various resources:
